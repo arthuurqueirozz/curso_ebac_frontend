@@ -1,0 +1,20 @@
+*{
+    background-color: black;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+input, button{
+    background-color: #fff;
+    color: black;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+.message{
+    background-color: #fff;
+    color: black;
+    padding: 8px;
+}
