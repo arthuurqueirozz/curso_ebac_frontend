@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    text-align: center;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form input{
+    margin: 8px 0;
+}
