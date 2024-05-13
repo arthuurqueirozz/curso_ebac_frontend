@@ -1,19 +1,20 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+      pkg: grunt.file.readJSON('package.json'),
       less: {
         development: {
-          options: {
-            paths: ['less'] 
-          },
           files: {
             'css/styles.css': 'less/styles.less' 
+          },
+          options: {
+            compress: true
           }
         }
       },
       uglify: {
         my_target: {
           files: {
-            'js/scripts.min.js': ['js/*.js'] 
+            'js/scripts.min.js': 'dev/scripts/main.js'
           }
         }
       }
