@@ -3,18 +3,18 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json'),
       less: {
         development: {
-          files: {
-            'css/styles.css': 'less/styles.less' 
-          },
           options: {
-            compress: true
+            paths: ['dev/styles']
+          },
+          files: {
+            'dist/styles/main.css': 'dev/styles/main.less' 
           }
         }
       },
       uglify: {
         my_target: {
           files: {
-            'js/scripts.min.js': 'dev/scripts/main.js'
+            'dist/scripts/main.min.js': 'dev/scripts/main.js'
           }
         }
       }
